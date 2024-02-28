@@ -1,0 +1,1 @@
+SELECT NOW() AS 台灣時間
