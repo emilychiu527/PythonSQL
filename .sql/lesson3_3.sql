@@ -4,3 +4,5 @@ CREATE TABLE IF NOT EXISTS city(
 	population INT,
 	PRIMARY KEY(id)
 );
+
+SELECT *FROM city;
