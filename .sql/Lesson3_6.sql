@@ -24,8 +24,37 @@ From stuendt;
 
 SELECT name AS 姓名,major AS 主修
 
-/*主修是英語的,分數由大到小/
+SELECT *FROM student 
+WHERE major=('英語')
+ORDER BY score DESC
+
+SELECT *FROM student
+WHERE major=('英語')
+AND score < 80
+
+SELECT *FROM student
+WHERE major=('英語')
+OR score > 60
+
+SELECT *FROM student
+WHERE major IN('英語','生物','歷史')
+
+SELECT *FROM student
+WHERE score >= 80 AND score <=100
+
+SELECT *FROM student
+WHERE score BETWEEN 80 AND 100
+
+SELECT *FROM student
+WHERE name LIKE '小%'
+
+SELECT *FROM student
+WHERE name LIKE '%黃%'
+
+
+
 /*主修是英語的,分數小於80分/
+
 /*主修是英語的,或者分數大於60/
 /*主修是英語,或者主修是生物,或者歷史(有兩種方式)/
 /*分數大於等於80，小於等於100分(有兩種方式)/
